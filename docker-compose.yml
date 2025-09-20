@@ -25,6 +25,8 @@ services:
     environment:
       - WEB_DOCUMENT_ROOT=/app
     ports:
+      - "80:80"
+      - "443:443"
       - "8080:80"
     networks:
       - app-network
@@ -51,4 +53,5 @@ volumes:
 networks:
   app-network:
     driver: bridge
+
 
